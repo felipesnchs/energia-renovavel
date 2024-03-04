@@ -118,7 +118,7 @@ nav li{
 /*    background-color:aqua;*/
     height: 35px;
     margin-top: 10px;
-    padding: 2px;
+    /* padding: 2px; */
 }
 .ques-circle{
     float: left;
@@ -277,7 +277,7 @@ nav li{
     }
     
     .choose-lang{
-        display: block;
+        /* display: block; */
         margin-top: 25px;
         margin-left: 0px;
         background-color: #2ecc71;
@@ -329,3 +329,9 @@ form {
     border-radius: 0.3rem;
     outline: 0;
 }
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }

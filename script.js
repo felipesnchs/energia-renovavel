@@ -6,66 +6,65 @@ var countQues=0;
 var lang;
 var score=0;
 
-var HTMLquestions=[
+var EnergiaRenovavelquestions=[
 
     {
-        question: "HTML is what type of language ?",
-        choices: ["Scripting Language","Markup Language","Programming Language","Network Protocol"],
-        answer: 1
-    
-    },
-    
-    {
-        question: "HTML uses :",
-        choices: ["User defined tags","Pre-specified tags","Fixed tags defined by the language","Tags only for linking"],
-        answer: 1
+        question: "De onde vem a energia solar?",
+        choices: ["Do petróleo","Do vento","Do Sol","Gás Natural"],
+        answer: 3
     
     },
     {
-        question: "The year in which HTML was first proposed _______.",
-        choices: ["1990","1980","2000","1995"],
-        answer: 1
+        question: "Qual é a fonte de energia mais poluente?",
+        choices: ["Energia Eólica","Energia Solar","Carvão","Hidrelétrica"],
+        answer: 3
     
     },
     {
-        question: "Apart from <b> tag, what other tag makes text bold ?",
-        choices: ["fat","strong","black","emp"],
+        question: "Qual é o principal combustível utilizado para gerar energia limpa?",
+        choices: ["Gasolina","Carvão","Óleo","Sol"],
+        answer: 4
+    
+    },
+    {
+        question: "Qual é uma fonte de energia renovável?",
+        choices: ["Vento","Petróleo","Carvão","Gás Natural"],
         answer: 1
     
     },
     {/*5*/
-        question: "How can you make a bulleted list with numbers? ",
-        choices: ["dl","ol","list","ul"],
-        answer: 1
+        question: "De onde vem a energia eólica?",
+        choices: ["Do mar","Das nuvens","Do vento","Do sol"],
+        answer: 3
     
     },
     {
-        question: "What tag is used to display a picture in a HTML page?",
-        choices: ["picture","image","pic","img"],
-        answer: 1
+        question: "Qual é a fonte de energia que vem de rios e quedas d'água?",
+        choices: ["Energia Geotérmica","Energia Térmica","Energia Hidrelétrica","Energia Nuclear"],
+        answer: 3
     
     }, 
     {
-        question: "HTML web pages can be read and rendered by _________.",
-        choices: ["Compiler","Server","Web Browser","Interpreter"],
-        answer: 1
+        question: "Qual é a fonte de energia que vem da queima de madeira, resíduos agrícolas e outros materiais orgânicos?",
+        choices: ["Energia Solar","Energia Eólica","Energia de Biomassa","Energia Nuclear"],
+        answer: 3
     
     }, 
     {
-        question: "Which of the following is not a browser ?",
-        choices: ["Microsofts Bing","Netscape Navigator","Mozilla Firefox","Opera"],
-        answer: 1
+        question: "Qual destes é um benefício da energia renovável?",
+        choices: ["Maior poluição do ar","Dependência de combustíveis fósseis","Emissões de gases de efeito estufa","Redução da poluição do ar e dos gases de efeito estufa"],
+        answer: 4
     
     }, 
     {
-        question: "HTML tags are surrounded by which type of brackets.",
-        choices: ["Curly","Round","Squart","Angle"],
-        answer: 1
+        question: "Qual é a principal fonte de energia renovável no Brasil?",
+        choices: ["Energia Eólica","Energia Solar","Energia Hidrelétrica","Energia Geotérmica"],
+        answer: 3
     
     }, 
     {/*10*/
-        question: "Tags and test that are not directly displayed on the page are written in _____ section.",
-        choices: ["head","title","body","html"],
+        question: "Qual dessas opções é uma fonte de energia renovável?",
+        choices: ["Carvão","Gás Natural","Vento","Petróleo"],
         answer: 1
     
     }
@@ -374,7 +373,7 @@ document.querySelector(".view-results").addEventListener("click",function(){
     
     document.querySelector(".right-wrong").innerHTML=correct+" estavam certos e "+((countQues+1)-correct)+" estavam errados!";
     
-    document.getElementById("display-final-score").innerHTML="Your Final Score is: "+score;
+    document.getElementById("display-final-score").innerHTML="Sua pontuação final é: "+score;
     
     if (correct/(countQues+1)>0.8){
         document.querySelector(".remark").innerHTML="Observação: Excelente! :)";
