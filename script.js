@@ -295,9 +295,31 @@ var Cquestions=[
 document.getElementById("score").textContent="Score : "+0;
 document.querySelector(".view-results").style.display="none";
 document.querySelector(".quiz").style.display="none";
+document.querySelector(".quiz-2").style.display="none";
 document.querySelector(".final-result").style.display="none";
 
 
+
+$(document).ready(function(){
+    $('.choose-lang').click(function(){
+        var selectedOption = $('#language').val();
+        if (selectedOption === 'memoria') {
+            $('#jogo-da-memoria').show(); // Mostra a div jogo-da-memoria
+            $('.quiz').hide(); // Oculta a div quiz
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $('#jogo-da-memoria').offset().top
+                }, 1000);
+            }, 500); // Atraso de 500 milissegundos
+        } else {
+            $('#jogo-da-memoria').hide(); // Oculta a div jogo-da-memoria se a opção não for "memoria"
+            $('.quiz').show(); // Mostra a div quiz se a opção for "memoria"
+            $('html, body').animate({
+                scrollTop: $('.quiz').offset().top
+            }, 1000);
+        }
+    });
+});
 
 
 
